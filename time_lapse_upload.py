@@ -165,9 +165,7 @@ if __name__ == '__main__':
 
   here = ephem.iObserver()
 
-	here.lon = 0
-
-	here.lat = 0
+	here.lon, here.lat = '0', '0'
 
   sunrise = here.next_rising(ephem.Sun())
 
